@@ -423,14 +423,13 @@
 
       <div class="footer-newsletter">
         <b class="footer-newsletter-title">Подпишитесь на рассылку</b>
-        <form class="footer-newsletter-form" action="">
-          <label for="">
-            <input class="newsletter-email-form" type="email" name="email" placeholder="E-mail"/>
-          </label>
-            <button class="newsletter-btn-submit"type="submit">Подписаться</button>
-            <svg class="newsletter-icon" width="24px" height="24px">
-              <use href="./images/icons.svg#icon-icon-sen"></use>
-            </svg>
+        <form action="#" class="footer-newsletter-form">
+          <label for="user_email"></label>
+          <input type="email" name="email" id="user_email" class="newsletter-email-form" placeholder="E-mail"/>
+          <button class="newsletter-btn-submit" type="submit">Подписаться</button>
+          <svg class="newsletter-icon" width="24px" height="24px">
+            <use href="./images/icons.svg#icon-icon-send"></use>
+          </svg>
         </form>
       </div>
    </div>
@@ -440,11 +439,28 @@
 
   <div class="backdrop is-hidden" data-modal>
     <div class="modal">
+      <b class="modal-btn-title">Оставьте свои данные, мы вам перезвоним</b>
       <button type="button" class="modal-close-btn" data-modal-close>
         <svg class="close-btn-icon" width="11px" height="11px">
           <use href="./images/icons.svg#icon-close"></use>
         </svg>
       </button>
+
+      <form action="#" class="modal-user-info">
+
+        <label for="user_name">Имя</label>
+        <input type="text" name="user-name" id="user_name" class="user-info-field">
+
+        <label for="user_phone">Телефон</label>
+        <input type="tel" name="user-phone" id="user_phone" class="user-info-field">
+
+        <label for="user_email">Почта</label>
+        <input type="email" name="user-email" id="user_email" class="user-info-field">
+
+        <label for="user_comments">Комментарий</label>
+        <textarea name="comments" id="user_comments" class="comments-field" placeholder="Введите текст"></textarea>
+      </form>
+
     </div>
   </div>
 
