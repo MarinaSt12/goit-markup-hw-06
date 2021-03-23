@@ -423,7 +423,7 @@
 
       <div class="footer-newsletter">
         <b class="footer-newsletter-title">Подпишитесь на рассылку</b>
-        <form action="#" class="footer-newsletter-form">
+        <form name="signup_form" action="#" class="footer-newsletter-form">
           <label for="user_email"></label>
           <input type="email" name="email" id="user_email" class="newsletter-email-form" placeholder="E-mail"/>
           <button class="newsletter-btn-submit" type="submit">Подписаться</button>
@@ -450,12 +450,21 @@
 
         <label for="user_name">Имя</label>
         <input type="text" name="user-name" id="user_name" class="user-info-field">
+        <svg class="user-info-icon" width="11px" height="11px">
+          <use href="./images/icons.svg#icon-Vector-1"></use>
+        </svg>
 
         <label for="user_phone">Телефон</label>
         <input type="tel" name="user-phone" id="user_phone" class="user-info-field">
+        <svg class="user-info-icon" width="11px" height="11px">
+          <use href="./images/icons.svg#icon-Vector-4"></use>
+        </svg>
 
         <label for="user_email">Почта</label>
         <input type="email" name="user-email" id="user_email" class="user-info-field">
+        <svg class="user-info-icon" width="11px" height="11px">
+          <use href="./images/icons.svg#icon-Vector-5"></use>
+        </svg>
 
         <label for="user_comments">Комментарий</label>
         <textarea name="comments" id="user_comments" class="comments-field" placeholder="Введите текст"></textarea>

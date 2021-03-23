@@ -341,24 +341,20 @@ button {
   cursor: pointer;
   border-radius: 4px;
   border: 0;
-
-  /* transition-property: background-color;
-  transition-duration: 2500ms;
-  transition-timing-function: var(--timimg-function); */
-
-  /* transition: background-color, box-shadow;
-  transition-duration: 2500ms;
-  transition-timing-function: var(--timimg-function); */
-
-  /* transition: background-color box-shadow 2500ms var(--timimg-function); */
-
-  /* transition: background-color 2500ms cubic-bezier(0.4, 0, 0.2, 1) */
 }
 
-.modal-btn:hover,
+/* .modal-btn:hover,
 .modal-btn:focus {
   background-color: var(--secondary-accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+} */
+
+.user-info-field {
+  position: relative;
+}
+
+.user-info-icon {
+  /* position: absolute; */
 }
 
 /* ============ END HERO ============ */
@@ -692,13 +688,10 @@ button {
   /* filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15)); */
 }
 
-/* .newsletter-email-form:hover,
-.newsletter-email-form:focus {
-  border: var(--accent-color);
-} */
 
 .newsletter-btn-submit {
-  display: block;
+  position: relative;
+  /* display: block; */
   display: flex;
 
   width: 200px;
@@ -726,14 +719,15 @@ button {
   transition-timing-function: var(--timimg-function); */
 }
 
-.newsletter-btn-submit:hover,
+/* .newsletter-btn-submit:hover,
 .newsletter-btn-submit:focus {
   background-color: var(--secondary-accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-}
+} */
 
 .newsletter-icon {
-  display: inline-flex;
+  /* display: inline-flex; */
+  position: absolute;
   fill: var(--text-color-white);
   /* background-color: var(--accent-color); */
 }
