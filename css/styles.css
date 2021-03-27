@@ -341,7 +341,16 @@ button {
   cursor: pointer;
   border-radius: 4px;
   border: 0;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  transition: background-color 250ms var(--timimg-function);
+
 }
+
+.modal-btn:hover,
+.modal-btn:focus {
+  background-color: var(--secondary-accent-color);
+} 
 
 /* ============ END HERO ============ */
 
@@ -695,7 +704,15 @@ button {
   letter-spacing: 0.06em;
   color: var(--text-color-white);
   cursor: pointer;
+
+  transition: background-color 250ms var(--timimg-function);
 }
+
+.newsletter-btn-submit:hover,
+.newsletter-btn-submit:focus {
+  background-color: var(--secondary-accent-color);
+}
+
 
 .newsletter-btn-text {
   padding-top: 10px;
@@ -907,16 +924,6 @@ button {
   cursor: pointer;
 }
 
-/* .modal-close-btn:focus {
-    fill: var(--accent-color);
-} */
-
-/* .modal-close-btn:focus,
-.modal-close-btn:hover {
-  color: var(--accent-color);
-}
- */
-
 .close-btn-icon {
   width: 11px;
   height: 11px;
@@ -927,11 +934,7 @@ button {
   transition-timing-function: var(--timimg-function);
 }
 
-/* .close-btn-icon:hover {
-  fill: var(--accent-color);
-} */
-
-.close-btn-icon:focus {
+.close-btn-icon:hover {
   fill: var(--accent-color);
 }
 
@@ -1070,6 +1073,8 @@ button {
 
   color: var(--text-color-white);
   background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
 
   font-family: inherit;
   font-size: 16px;
@@ -1079,6 +1084,14 @@ button {
   cursor: pointer;
   border-radius: 4px;
   border: 0;
+
+  transition: background-color 250ms var(--timimg-function);
+
+}
+
+.modal-form-btn:hover,
+.modal-form-btn:focus {
+  background-color: var(--secondary-accent-color)
 }
 
 .agreement-link {
