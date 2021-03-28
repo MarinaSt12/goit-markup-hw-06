@@ -925,11 +925,11 @@ button {
   cursor: pointer;
 
   transition-property: fill;
-  transition-duration: 250ms;
+  transition-duration: 2500ms;
   transition-timing-function: var(--timimg-function);
 }
 
-.close-btn-icon:hover,
+.modal-close-btn:hover,
 .modal-close-btn:focus {
   fill: var(--accent-color);
 }
@@ -938,11 +938,6 @@ button {
   width: 11px;
   height: 11px;
   fill: colorCurrent;
-
-  transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: var(--timimg-function);
-
 }
 
 .is-hidden {
