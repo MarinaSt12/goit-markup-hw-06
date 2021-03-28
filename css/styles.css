@@ -344,13 +344,12 @@ button {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
   transition: background-color 250ms var(--timimg-function);
-
 }
 
 .modal-btn:hover,
 .modal-btn:focus {
   background-color: var(--secondary-accent-color);
-} 
+}
 
 /* ============ END HERO ============ */
 
@@ -552,6 +551,7 @@ button {
 
 .footer-wrapper {
   display: flex;
+  align-items: baseline;
 }
 
 .logo-dark-theme {
@@ -589,9 +589,6 @@ button {
 .footer-social {
   margin-left: 70px;
   width: 206px;
-  height: 80px;
-
-  padding-top: 12px;
   min-width: 206px;
 }
 
@@ -638,9 +635,6 @@ button {
 .footer-newsletter {
   margin-left: 93px;
   width: 570;
-  height: 86px;
-
-  padding-top: 12px;
   min-width: 570px;
 }
 
@@ -712,7 +706,6 @@ button {
 .newsletter-btn-submit:focus {
   background-color: var(--secondary-accent-color);
 }
-
 
 .newsletter-btn-text {
   padding-top: 10px;
@@ -932,19 +925,34 @@ button {
   cursor: pointer;
 }
 
+/* .modal-close-btn:hover,
+.modal-close-btn:focus {
+  fill: var(--accent-color);
+} */
+
+/* .modal-close-btn:focus {
+  fill: var(--accent-color);
+} */
+
 .close-btn-icon {
   width: 11px;
   height: 11px;
   fill: var(--text-color-black);
 
-  transition-property: fill;
+  /* transition-property: fill;
   transition-duration: 250ms;
-  transition-timing-function: var(--timimg-function);
+  transition-timing-function: var(--timimg-function); */
 }
 
-.close-btn-icon:hover {
+/* .close-btn-icon:hover {
+  fill: var(--accent-color);
+} */
+
+.close-btn-icon:hover,
+.close-btn-icon:focus {
   fill: var(--accent-color);
 }
+
 
 .is-hidden {
   opacity: 0;
@@ -958,6 +966,7 @@ button {
 }
 
 .modal-form-field {
+  margin-bottom: 10px;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
@@ -968,7 +977,6 @@ button {
   position: relative;
   display: block;
   margin-top: 4px;
-  margin-bottom: 10px;
 }
 
 .modal-form-input {
@@ -1002,11 +1010,18 @@ button {
   fill: var(--accent-color);
 }
 
+.modal-form-field-comment {
+  margin-bottom: 20px;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: var(--text-color-grey);
+}
+
 .modal-form-comment {
   width: 100%;
   height: 120px;
   margin-top: 4px;
-  margin-bottom: 20px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   resize: none;
@@ -1084,7 +1099,6 @@ button {
   background-color: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
-
   font-family: inherit;
   font-size: 16px;
   font-weight: 700;
@@ -1095,12 +1109,11 @@ button {
   border: 0;
 
   transition: background-color 250ms var(--timimg-function);
-
 }
 
 .modal-form-btn:hover,
 .modal-form-btn:focus {
-  background-color: var(--secondary-accent-color)
+  background-color: var(--secondary-accent-color);
 }
 
 .agreement-link {
