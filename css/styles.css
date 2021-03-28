@@ -923,36 +923,27 @@ button {
   background-color: transparent;
   border-radius: 50%;
   cursor: pointer;
+
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: var(--timimg-function);
 }
 
-/* .modal-close-btn:hover,
+.close-btn-icon:hover,
 .modal-close-btn:focus {
   fill: var(--accent-color);
-} */
-
-/* .modal-close-btn:focus {
-  fill: var(--accent-color);
-} */
+}
 
 .close-btn-icon {
   width: 11px;
   height: 11px;
-  fill: var(--text-color-black);
+  fill: colorCurrent;
 
-  /* transition-property: fill;
+  transition-property: fill;
   transition-duration: 250ms;
-  transition-timing-function: var(--timimg-function); */
+  transition-timing-function: var(--timimg-function);
+
 }
-
-/* .close-btn-icon:hover {
-  fill: var(--accent-color);
-} */
-
-.close-btn-icon:hover,
-.close-btn-icon:focus {
-  fill: var(--accent-color);
-}
-
 
 .is-hidden {
   opacity: 0;
